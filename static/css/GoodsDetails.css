@@ -40,7 +40,30 @@
     font-size: .12rem;
     color: #777;
     padding: .12rem .15rem;
+    overflow: hidden;
+    max-height: 0.61rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
+    .goods_details_content_more {
+        background: #ffffff;
+        padding: 0.08rem 0;
+        text-align: center;
+        height: 0.4rem;
+        position: relative;
+    }
+    .goods_details_content_more_btn {
+        font-size: 0.1rem;
+        color: #00e0A8;
+        border: 1px solid #00e0A8;
+        background: #ffffff;
+        padding: 0.01rem 0.05rem;
+        border-radius: 0.15rem;
+        display: inline-block;
+        position: absolute;
+        top: 0.13rem;
+        left: 42%;
+    }
 .you_like {
     margin: .08rem 0;
 }
@@ -146,6 +169,7 @@
 }
 .user_comment_zan {
     color: #00e0A8;
+    margin-top: 0.05rem;
 }
 .user_comment_zan_img {
     display: inline-block;
@@ -215,8 +239,11 @@
     height: 100%;
 }
 .you_like_swiper {
-    /*width: 1.6rem;*/
+    overflow: hidden;
 }
 .swiper-wrapper_you_like {
     width: 50%;
 }
+
+
+

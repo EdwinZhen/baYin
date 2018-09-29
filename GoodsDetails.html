@@ -40,6 +40,7 @@
 <div class="goods_details">
     <p class="ci_title">商品介绍</p>
     <p class="goods_details_content">萨克斯（英语：Saxophone，简称：Sax。）是一种木管乐器，但是管体通常是用黄铜制造，使得萨克斯管同时具有铜管类乐器的特性。有意思的是这点常造成归类上的分歧。从发声原理上来看萨克斯管和同样使用单簧片的单簧管更接近，所以一般归类为木管乐器。萨克斯管同时也是一种移调乐器，常见调性为降E和降B，也有C调和F调。萨克斯管以其烟斗状的外形为人所熟知。</p>
+    <p class="goods_details_content_more"><span class="goods_details_content_more_btn">查看更多</span></p>
 </div>
 <!-- 猜你喜欢-->
 <div class="you_like">
@@ -171,6 +172,19 @@
             loop: false,
             slidesPerView :'auto'
         });
+    });
+</script>
+<script>
+    $('.goods_details_content_more_btn').click(function(){
+        var sas = $('.goods_details_content_more_btn').text();
+//            $('.class_details_content_more_btn').attr('style','border-color:#00e0a8');
+        if(sas == "查看更多") {
+            $('.goods_details_content').attr('style', 'max-height:600px;');
+            $('.goods_details_content_more_btn').text("收起更多");
+        }else{
+            $('.goods_details_content').attr('style', 'max-height:0.61rem;');
+            $('.goods_details_content_more_btn').text("查看更多");
+        }
     });
 </script>
 </body>
