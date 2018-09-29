@@ -1,0 +1,227 @@
+
+.content {
+    font-size: 0.11rem;
+}
+.outfit_img {
+    width: 100%;
+    height: 1.801rem;
+}
+.outfit_msg {
+    margin: 0.08rem 0;
+    background: #ffffff;
+    display: flex;
+}
+.outfit_msg_l {
+    padding: 0.1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+.outfit_msg_r {
+    padding: 0.15rem 0.25rem 0.1rem 0;
+    width: 2.6rem;
+    padding-right: 0;
+}
+.outfit_name {
+    color: #000;
+    opacity: 0.85;
+    font-size: 0.14rem;
+    font-weight: bold;
+    margin-bottom: 0.03rem;
+}
+.outfit_lev_c {
+    color: #000;
+    opacity: 0.45;
+    font-size: 0.11rem;
+    margin-bottom: 0.04rem;
+}
+.outfit_msg_r_bottom {
+    color: #00e0A8;
+    opacity: 1;
+    font-size: 0.11rem;
+}
+.outfit_msg_r_top {
+    display: flex;
+    margin-right: 0.2rem;
+}
+.outfit_msg_r_top_l {
+    width: 90%;
+}
+.outfit_msg_r_top_r {
+    width: 0.23rem;
+    height: 0.23rem;
+}
+.outfit_lev_img,.outfit_self_address_img {
+    display: inline-block;
+    width: 0.12rem;
+    height: 0.12rem;
+    margin-right: 0.03rem;
+}
+.outfit_details {
+    background: #ffffff;
+    margin-bottom: 0.08rem;
+}
+.outfit_details_content {
+    padding: 0.15rem 0.13rem;
+    font-size: 0.118rem;
+    opacity: 0.85;
+}
+.offline_course {
+    margin-bottom: 0.08rem;
+}
+.offline_course_all {
+    display: flex;
+    background: #ffffff;
+    padding: 0.06rem 0.15rem;
+}
+    .offline_course_img {
+        width: 50%;
+        height: 0.85rem;
+        padding-right: 0.08rem;
+    }
+    .offline_course_msg {
+        position: relative;
+    }
+    .offline_course_name {
+        font-size: 0.12rem;
+        font-weight: bold;
+        opacity: 0.85;
+        margin-bottom: 0.05rem;
+    }
+    .offline_course_details {
+        font-size: 0.11rem;
+        opacity: 0.55;
+    }
+    .offline_course_price {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+    }
+        .offline_course_sales {
+            font-size: 0.1rem;
+            color: #ffffff;
+            background: #00e0A8;
+            border-radius: 0.15rem;
+            opacity: 1;
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*left: 0;*/
+            padding: 0 0.05rem;
+        }
+        .offline_course_now_price {
+            font-size: 0.12rem;
+            color: #00e0A8;
+            font-weight: bold;
+            opacity: 1;
+            position: absolute;
+            right: -0.92rem;
+            top: 0;
+        }
+.user_comment {
+    background: #ffffff;
+    padding-bottom: 0.01rem;
+}
+.user_comment_outfit {
+    width: 100%;
+    height: 1.3rem;
+    padding: 0.13rem 0.15rem;
+}
+.user_comment_list {
+    background: #ffffff
+}
+    .user_comment_all {
+        display: flex;
+        padding: 0.15rem;
+        padding-bottom: 0;
+        background: #ffffff;
+    }
+        .user_img {
+            width: 0.5rem;
+        }
+        .user_img_c {
+            width: 0.5rem;
+            height: 0.5rem;
+            background: transparent;
+            border-radius: 50%;
+        }
+        .user_info {
+            width: 2.5rem;
+            font-size: .12rem;
+            padding: 0 0.11rem;
+            padding-bottom: 0.15rem;
+            border-bottom: 1px solid #ddd;
+        }
+        .user_name {
+            font-size: 0.13rem;
+            color: #555;;
+        }
+        .user_comment_xin {
+            float: right;
+        }
+        .user_comment_xin>span {
+            display: inline-block;
+            width: 0.1rem;
+            height: 0.1rem;
+        }
+        .user_comment_time {
+            font-size: 0.08rem;
+            color: #555;
+        }
+        .user_comment_content {
+            font-size: .14rem;
+            color: #333333;
+            max-height: 0.55rem;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+        .user_comment_zan {
+            margin-top: 0.08rem;
+        }
+        .user_comment_zan_txt {
+            color: #000000;
+            font-size: 0.13rem;
+            opacity: 0.25;
+        }
+        .user_comment_zan_img {
+            display: inline-block;
+            width: 0.16rem;
+            height:0.16rem;
+            margin-right: 0.02rem;
+            opacity: 0.25;
+        }
+        .user_comment_zan_more {
+            font-size: 0.14rem;
+            opacity: 0.65;
+            float: right;
+        }
+            .user_comment_zan_more_img {
+                display: inline-block;
+                width: 0.12rem;
+                height: 0.12rem;
+                margin-left: 0.03rem;
+            }
+    .user_comment_more {
+        text-align: center;
+        font-size: 0.13rem;
+        opacity: 0.65;
+        margin: 0.16rem 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

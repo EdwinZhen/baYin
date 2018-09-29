@@ -1,0 +1,91 @@
+
+
+.school_img {
+    width: 100%;
+    height: 1.8rem;
+}
+.school_info {
+    background: #ffffff;
+    padding: 0.19rem 0.15rem;
+    padding-bottom: 0.08rem;
+    margin: 0.08rem 0;
+    color: #000000;
+}
+.school_name {
+    opacity: 0.85;
+    font-size: 0.14rem;
+    font-weight: bold;
+    margin-bottom: 0.03rem;
+}
+.school_lev {
+    opacity: 0.45;
+    font-size: 0.12rem;
+    margin-bottom: 0.04rem;
+}
+.self_address {
+    opacity: 1;
+    font-size: 0.13rem;
+    color: #00e0A8;
+}
+.school_lev_img,.self_address_img {
+    display: inline-block;
+    width: 0.12rem;
+    height: 0.12rem;
+    margin-right: 0.03rem;
+}
+.school_details {
+    background: #ffffff;
+    margin: 0.06rem 0;
+}
+.school_details_content {
+    padding: 0.1rem 0.15rem;
+    padding-right: 0.08rem;
+    opacity: 0.85;
+    font-size: 0.12rem;
+    color: #000000;
+}
+.art_class_list {
+    padding: 0.06rem 0.15rem;
+    padding-right: 0.1rem;
+    background: #ffffff;
+}
+.art_class_all {
+    display: flex;
+    margin-bottom: 0.08rem;
+}
+.art_class_img {
+    width: 1.3rem;
+    height: 0.85rem;
+}
+.art_class_img img {
+    position: relative;
+    top: -0.215rem;
+    left: 0;
+}
+.art_class_msg {
+    width: 55%;
+    padding-left: 0.1rem;
+    position: relative;
+}
+.art_class_name {
+    font-size: 0.12rem;
+    font-weight: bold;
+    margin-bottom: 0.03rem;
+}
+.art_class_details {
+    font-size: 0.09rem;
+    max-height: 0.4rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.art_class_mf_img {
+    width: 0.31rem;
+    height: 0.13rem;
+    position: absolute;
+    top: -0.25rem;
+    right: 0.1rem;
+}
+
+

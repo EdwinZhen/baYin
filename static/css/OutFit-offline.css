@@ -1,0 +1,97 @@
+
+
+.course_info {
+    background: #ffffff;
+    padding: 0.11rem 0.15rem;
+    margin: 0.08rem 0;
+    margin-top: 0;
+    height: 0.683rem;
+}
+.top_img {
+    height: 1.801rem;
+}
+    .course_info_price {
+
+    }
+        .course_info_now_price {
+            font-size: 0.18rem;
+            color: #00e0A8;
+        }
+        .course_info_sales {
+            color: #000;
+            opacity: 0.65;
+            font-size: 0.11rem;
+            float: right;
+            display: inline-block;
+            padding-top: 0.05rem;
+        }
+    .course_info_name {
+        font-size: 0.16rem;
+        color: #000000;
+        opacity: 1;
+        font-weight: bold;
+    }
+.buy_details {
+    margin: 0.08rem 0;
+    background: #ffffff;
+    padding: 0.11rem 0.15rem;
+}
+    .buy_details_name {
+        padding: 0;
+        line-height: 0.15rem;
+        position: relative;
+        margin-bottom: 0.05rem;
+    }
+        .buy_details_name_img {
+            display: inline-block;
+            width: 0.15rem;
+            height: 0.15rem;
+            position: relative;
+            left: 0;
+            top: 0.025rem;
+        }
+        .buy_details_name_c {
+            display: inline-block;
+            font-size: 0.14rem;
+            color: #ff9d4d;
+            opacity: 0.85;
+        }
+    .buy_details_content {
+        font-size: 0.12rem;
+        color: #000;
+        opacity: 0.45;
+    }
+.bottom_fixed_out_fit {
+    background: #ffffff;
+    width: 0.64rem;
+    display: flex;
+    line-height: 0.5rem;
+}
+.bottom_fixed_buy {
+    width: 1.92rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+    .bottom_fixed_shop_l_s {
+        left: 0.2rem;
+        color: #00e0A8;
+    }
+    .bottom_fixed_shop_l_c {
+        left: 0.79rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

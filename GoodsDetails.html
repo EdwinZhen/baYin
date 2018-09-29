@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>商品详情</title>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
+    <link rel="stylesheet" href="static/css/all_ty.css"/>
+    <link rel="stylesheet" href="static/css/GoodsDetails.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+</head>
+<body onload="onload_in([2,3,4,5])">
+<!-- 乐器图片轮播-->
+<div>
+    <div class="top_img">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="static/images/default.jpg" alt="乐器"/></div>
+                <div class="swiper-slide"><img src="static/images/test.jpg" alt="乐器"/></div>
+                <div class="swiper-slide"><img src="static/images/shop_top.jpg" alt="乐器"/></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- 商品名字、价格-->
+    <div class="top_txt">
+        <div class="top_txt_l">
+            <p>
+                <span class="top_txt_l_now_price">￥2999.00</span>
+                <span class="top_txt_l_old_price">￥2200</span>
+                <span class="top_txt_l_sales">月销488笔</span>
+            </p>
+            <p class="top_txt_l_title">萨克斯考级一级专用</p>
+        </div>
+        <div class="top_txt_r"><a href="tel://18329798514 "><img src="static/images/phone_icon.png" alt="打电话"/></a></div>
+    </div>
+</div>
+<!-- 商品介绍-->
+<div class="goods_details">
+    <p class="ci_title">商品介绍</p>
+    <p class="goods_details_content">萨克斯（英语：Saxophone，简称：Sax。）是一种木管乐器，但是管体通常是用黄铜制造，使得萨克斯管同时具有铜管类乐器的特性。有意思的是这点常造成归类上的分歧。从发声原理上来看萨克斯管和同样使用单簧片的单簧管更接近，所以一般归类为木管乐器。萨克斯管同时也是一种移调乐器，常见调性为降E和降B，也有C调和F调。萨克斯管以其烟斗状的外形为人所熟知。</p>
+</div>
+<!-- 猜你喜欢-->
+<div class="you_like">
+    <div class="ci_title">猜你喜欢</div>
+    <div class="you_like_swiper">
+        <div class="swiper-container_you_like">
+            <div class="swiper-wrapper swiper-wrapper_you_like">
+                <div class="swiper-slide">
+                    <div class="like_goods">
+                        <div class="like_img"><img src="static/images/default.jpg" alt="乐器"/></div>
+                        <div class="like_txt">
+                            <p class="like_goods_title">次号考试一级专用1</p>
+                            <p class="like_goods_pri"><span class="like_goods_price">￥1999</span><span class="like_goods_sales">88人购买</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="like_goods">
+                        <div class="like_img"><img src="static/images/default.jpg" alt="乐器"/></div>
+                        <div class="like_txt">
+                            <p class="like_goods_title">次号考试一级专用2</p>
+                            <p class="like_goods_pri"><span class="like_goods_price">￥1999</span><span class="like_goods_sales">88人购买</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="like_goods">
+                        <div class="like_img"><img src="static/images/default.jpg" alt="乐器"/></div>
+                        <div class="like_txt">
+                            <p class="like_goods_title">次号考试一级专用3</p>
+                            <p class="like_goods_pri"><span class="like_goods_price">￥1999</span><span class="like_goods_sales">88人购买</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div style="clear: both;"></div>-->
+</div>
+<!-- 测评-->
+<div class="user_comment">
+    <div class="ci_title">
+        测评（99条）
+    </div>
+    <div class="user_comment_all user_comment_all_2" data-user_id="2" data-xin_light="4">
+        <div class="user_img">
+            <div class="user_img_c"><img src="static/images/store_logo.png" alt="图像"/></div>
+        </div>
+        <div class="user_info">
+            <p class="user_name">皮皮虾
+                    <span class="user_comment_xin">
+                        <span><img class="user_comment_xin_img_1_2" src="static/images/star/xin_hui.png"/></span>
+                        <span><img class="user_comment_xin_img_2_2" src="static/images/star/xin_hui.png"/></span>
+                        <span><img class="user_comment_xin_img_3_2" src="static/images/star/xin_hui.png"/></span>
+                        <span><img class="user_comment_xin_img_4_2" src="static/images/star/xin_hui.png"/></span>
+                        <span><img class="user_comment_xin_img_5_2" src="static/images/star/xin_hui.png"/></span>
+                    </span>
+            </p>
+            <p class="user_comment_time">2018-07-27  17:05:00</p>
+            <p class="user_comment_content">这个课程很好，对我的帮助很大很喜欢，支持你们！</p>
+            <p class="user_comment_zan"><span class="user_comment_zan_img"><img src="static/images/zan_lv.png"/></span><span>26</span></p>
+        </div>
+    </div>
+    <div class="user_comment_all user_comment_all_5" data-user_id="5" data-xin_light="3">
+        <div class="user_img">
+            <div class="user_img_c"><img src="static/images/store_logo.png" alt="图像"/></div>
+        </div>
+        <div class="user_info">
+            <p class="user_name">蓝胖纸
+                    <span class="user_comment_xin">
+                        <span><img class="user_comment_xin_img_1_5" src="static/images/star/xin_hui.png"/></span>
+                        <span><img class="user_comment_xin_img_2_5" src="static/images/star/xin_hui.png"/></span>
+                        <span><img class="user_comment_xin_img_3_5" src="static/images/star/xin_hui.png"/></span>
+                        <span><img class="user_comment_xin_img_4_5" src="static/images/star/xin_hui.png"/></span>
+                        <span><img class="user_comment_xin_img_5_5" src="static/images/star/xin_hui.png"/></span>
+                    </span>
+            </p>
+            <p class="user_comment_time">2018-07-27  17:05:00</p>
+            <p class="user_comment_content">这个课程很好，对我的帮助很大很喜欢，支持你们！</p>
+            <p class="user_comment_zan"><span class="user_comment_zan_img"><img src="static/images/zan_lv.png"/></span><span>26</span></p>
+        </div>
+    </div>
+</div>
+<!-- 底部固定-->
+<div class="bottom_fixed">
+    <div class="bottom_fixed_shop">
+        <div class="bottom_fixed_shop_l"><img src="static/images/shop.png"/><span class="bottom_fixed_shop_l_shop">店铺</span></div>
+        <div class="bottom_fixed_shop_r"><img src="static/images/shoucang_hui.png"/><span class="bottom_fixed_shop_l_sc">未收藏</span></div>
+    </div>
+    <div class="bottom_fixed_buy">购买（￥2.00）</div>
+</div>
+<div class="bottom_fixed_bottom">
+
+</div>
+<script>
+    function onload_in(user_id){
+        for (var i=0;i<user_id.length;i++){
+            user_xin(user_id[i]);
+        }
+    }
+    //用户评论点亮的红心
+    function user_xin(user_id){
+        var ss = '.user_comment_all_'+user_id;
+        var xin_num = $(ss).attr("data-xin_light");
+        for (var i= 0;i<=xin_num;i++){
+            var xin_light = '.user_comment_xin_img_'+i+'_'+user_id;
+            $(xin_light).attr("src","static/images/star/xin_red.png");
+        }
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+            autoplay:true,
+            delay:3000,
+            disableOnInteraction:true,
+//            effect:'coverflow',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable :true
+            },
+            centeredSlides : true,
+            slidesPerView :'auto',
+            centeredslides:true
+        });
+        var mySwiperTwo = new Swiper ('.swiper-container_you_like', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView :'auto'
+        });
+    });
+</script>
+</body>
+</html>
