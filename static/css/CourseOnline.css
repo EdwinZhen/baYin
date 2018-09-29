@@ -99,6 +99,7 @@ body{font-size: .11rem}
 .like_class {
     background: #ffffff;
     padding: 0.1rem 0.15rem;
+    overflow: hidden;
 }
     .like_class_all {
         padding-right: 0.05rem;
