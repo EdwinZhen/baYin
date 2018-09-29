@@ -203,13 +203,9 @@
         $('.user_comment_more').click(function(){
             var list_height = $('.user_comment_list').outerHeight();
             if (list_height <= 180){
-                $('.user_comment_list').attr('style','max-height:1.6rem;');
-            }else if(list_height > 180 && list_height <= 270){
-                $('.user_comment_list').attr('style','max-height:2.4rem;');
-            }else if(list_height < 270 && list_height <= 360){
                 $('.user_comment_list').attr('style','max-height:3.2rem;');
             }else{
-                alert("已经没有啦。。。");
+                $('.user_comment_more').text("————没有了————");
             }
         });
     </script>
