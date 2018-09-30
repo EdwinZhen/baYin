@@ -5,6 +5,7 @@
     <title></title>
     <script type="text/javascript" src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
     <style>
+        body{font-size: 2rem}
         .dingwei {
             width: 20%;
             padding: 10px 20px;
@@ -14,7 +15,7 @@
             border-radius: 5px;
             margin: 20px auto;
         }
-        .show_address {
+        #show_address {
             width: 80%;
             padding: 20px;
             background: #dddddd;
@@ -26,8 +27,8 @@
     <div class="dingwei" onclick="dingwei()">
         定位
     </div>
-    <div class="show_address">
-
+    <div id="show_address">
+        地址：
     </div>
     <script type="text/JavaScript">
         var geolocation = new qq.maps.Geolocation("OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77", "bayin");
@@ -43,6 +44,8 @@
              //TODO 实现业务代码逻辑
             var sss = nation + city + addr;
             console.log(sss);
+            var a = document.getElementById('show_address');
+            a.innerText = "地址："+sss;
         }
         function showErr() {
                 // TODO 如果出错了调用此方法
