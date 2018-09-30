@@ -58,7 +58,6 @@
     </div>
 
     <script>
-
 function cc_c() {
     var url = "http://sss.eightyin.com/sites/api/?url=merchant/home/data";
     $.post(url,{"seller_id": 62}, function () {
@@ -66,33 +65,33 @@ function cc_c() {
     });
 }
 function cc_cc(){
-    var url = "http://sss.eightyin.com/sites/api/?url=merchant/home/data";
+    var url = "http://sss.eightyin.com/sites/api/?url=home/data";
     $.ajax({
         type:"POST",    //请求方式
         async:true,    //是否异步
         url:url,
-        headers: {
-            "device-udid": "a46d663d675d4858ea7d0a21c2de06e9",
-            "device-client": "weapp",
-            "device-code ": "6015",
-            "api-version": "1.6"
-        },
-        dataType:"json",    //跨域json请求一定是jsonp
+//        headers: {
+//            "device-udid": "a46d663d675d4858ea7d0a21c2de06e9",
+//            "device-client": "weapp",
+//            "device-code ": "6015",
+//            "api-version": "1.6"
+//        },
+        dataType:"json",
         data:{"seller_id": 62},    //请求参数
         success: function(data) {
               //请求成功处理，和本地回调完全一样
-            console.log("请求成功处理");
+            console.log("请求成功：");
             console.log(data);
             console.log("-------------------------------------------");
         },
         successCallback: function (data) {
-            console.log("kuayu请求成功处理");
+            console.log("kuayu请求成功：");
             console.log(data);
             console.log("-------------------------------------------");
         },
         error: function(res) {
                 //请求出错处理
-            console.log("请求出错处理");
+            console.log("请求出错：");
             console.log(res);
         }
     });
