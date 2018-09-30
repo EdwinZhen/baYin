@@ -41,14 +41,12 @@
              var addr = position.addr; //详细地址
              var lat = position.lat; //
              var lng = position.lng; //火星坐标
-             //TODO 实现业务代码逻辑
             var sss = nation + city + addr;
-            console.log(sss);
             var a = document.getElementById('show_address');
             a.innerText = "地址："+sss;
         }
         function showErr() {
-                // TODO 如果出错了调用此方法
+            alert("定位失败，请稍后再试...");
         }
 
         function dingwei(){
