@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <title>机构导览</title>
+    <link rel="stylesheet" href="static/css/swiper.min.css"/>
     <link rel="stylesheet" href="static/css/all_ty.css"/>
     <link rel="stylesheet" href="static/css/OutFit.css"/>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
 </head>
 <body onload="onload_in([2,3,4,5])">
     <div class="content">
         <!-- 机构图片-->
-        <div class="outfit_img"><img src="static/images/test.jpg" alt="机构"/></div>
+        <div class="outfit_img swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="static/images/test.jpg" alt="机构"/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/images/default.jpg" alt="机构"/>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
         <!-- 机构名称 -->
         <div class="outfit_msg">
             <div class="outfit_msg_l"><img src="static/images/store_logo.png" alt="机构图标"/></div>
@@ -21,7 +33,7 @@
                         <p class="outfit_name">乐奇奇艺术培训中心</p>
                         <p class="outfit_lev_c"><span class="outfit_lev_img"><img src="static/images/school_lev.png"/></span>距您12.12km</p>
                     </div>
-                    <div class="outfit_msg_r_top_r"><img src="static/images/phone_icon.png" alt="打电话"/></div>
+                    <div class="outfit_msg_r_top_r"><a href="tel://18329798514 "><img src="static/images/phone_icon.png" alt="打电话"/></a></div>
                 </div>
                 <div class="outfit_msg_r_bottom">
                     <span class="outfit_self_address_img"><img src="static/images/school_self_address.png"/></span>
@@ -38,36 +50,38 @@
         <!-- 线下课程-->
         <div class="offline_course">
             <div class="ci_title">线下课程</div>
-            <div class="offline_course_all">
-                <div class="offline_course_img"><img src="static/images/default.jpg" alt="乐器"/></div>
-                <div class="offline_course_msg">
-                    <p class="offline_course_name">次号考试一级音阶初级培训</p>
-                    <p class="offline_course_details">音乐学院  &nbsp;  李伟</p>
-                    <div class="offline_course_price">
-                        <div class="offline_course_sales">88人购买</div>
-                        <div class="offline_course_now_price">￥2.00</div>
+            <div class="offline_course_list">
+                <div class="offline_course_all">
+                    <div class="offline_course_img"><img src="static/images/default.jpg" alt="乐器"/></div>
+                    <div class="offline_course_msg">
+                        <p class="offline_course_name">次号考试一级音阶初级培训</p>
+                        <p class="offline_course_details">音乐学院  &nbsp;  李伟</p>
+                        <div class="offline_course_price">
+                            <div class="offline_course_sales">88人购买</div>
+                            <div class="offline_course_now_price">￥2.00</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="offline_course_all">
-                <div class="offline_course_img"><img src="static/images/default.jpg" alt="乐器"/></div>
-                <div class="offline_course_msg">
-                    <p class="offline_course_name">次号考试一级音阶初级培训</p>
-                    <p class="offline_course_details">音乐学院  &nbsp;  李伟</p>
-                    <div class="offline_course_price">
-                        <div class="offline_course_sales">88人购买</div>
-                        <div class="offline_course_now_price">￥2.00</div>
+                <div class="offline_course_all">
+                    <div class="offline_course_img"><img src="static/images/default.jpg" alt="乐器"/></div>
+                    <div class="offline_course_msg">
+                        <p class="offline_course_name">次号考试一级音阶初级培训</p>
+                        <p class="offline_course_details">音乐学院  &nbsp;  李伟</p>
+                        <div class="offline_course_price">
+                            <div class="offline_course_sales">88人购买</div>
+                            <div class="offline_course_now_price">￥2.00</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="offline_course_all">
-                <div class="offline_course_img"><img src="static/images/test.jpg" alt="乐器"/></div>
-                <div class="offline_course_msg">
-                    <p class="offline_course_name">乐器共享</p>
-                    <p class="offline_course_details">一起畅快练习各类乐器</p>
-                    <div class="offline_course_price">
-                        <div class="offline_course_sales">88人购买</div>
-                        <div class="offline_course_now_price">￥2.00</div>
+                <div class="offline_course_all">
+                    <div class="offline_course_img"><img src="static/images/test.jpg" alt="乐器"/></div>
+                    <div class="offline_course_msg">
+                        <p class="offline_course_name">乐器共享</p>
+                        <p class="offline_course_details">一起畅快练习各类乐器</p>
+                        <div class="offline_course_price">
+                            <div class="offline_course_sales">88人购买</div>
+                            <div class="offline_course_now_price">￥2.00</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -187,21 +201,6 @@
             </div>
         </div>
     </div>
-<script>
-    function onload_in(user_id){
-        for (var i=0;i<user_id.length;i++){
-            user_xin(user_id[i]);
-        }
-    }
-    //用户评论点亮的红心
-    function user_xin(user_id){
-        var ss = '.user_comment_all_'+user_id;
-        var xin_num = $(ss).attr("data-xin_light");
-        for (var i= 0;i<=xin_num;i++){
-            var xin_light = '.user_comment_xin_img_'+i+'_'+user_id;
-            $(xin_light).attr("src","static/images/star/xin_red.png");
-        }
-    }
-</script>
+<script src="static/js/OutFit.js" charset="utf-8"></script>
 </body>
 </html>

@@ -86,12 +86,13 @@
     <div class="ci_title">
         测评（99条）
     </div>
-    <div class="user_comment_all user_comment_all_2" data-user_id="2" data-xin_light="4">
-        <div class="user_img">
-            <div class="user_img_c"><img src="static/images/store_logo.png" alt="图像"/></div>
-        </div>
-        <div class="user_info">
-            <p class="user_name">皮皮虾
+    <div class="user_comment_list">
+        <div class="user_comment_all user_comment_all_2" data-user_id="2" data-xin_light="4">
+            <div class="user_img">
+                <div class="user_img_c"><img src="static/images/store_logo.png" alt="图像"/></div>
+            </div>
+            <div class="user_info">
+                <p class="user_name">皮皮虾
                     <span class="user_comment_xin">
                         <span><img class="user_comment_xin_img_1_2" src="static/images/star/xin_hui.png"/></span>
                         <span><img class="user_comment_xin_img_2_2" src="static/images/star/xin_hui.png"/></span>
@@ -99,18 +100,18 @@
                         <span><img class="user_comment_xin_img_4_2" src="static/images/star/xin_hui.png"/></span>
                         <span><img class="user_comment_xin_img_5_2" src="static/images/star/xin_hui.png"/></span>
                     </span>
-            </p>
-            <p class="user_comment_time">2018-07-27  17:05:00</p>
-            <p class="user_comment_content">这个课程很好，对我的帮助很大很喜欢，支持你们！</p>
-            <p class="user_comment_zan"><span class="user_comment_zan_img"><img src="static/images/zan_lv.png"/></span><span>26</span></p>
+                </p>
+                <p class="user_comment_time">2018-07-27  17:05:00</p>
+                <p class="user_comment_content">这个课程很好，对我的帮助很大很喜欢，支持你们！</p>
+                <p class="user_comment_zan"><span class="user_comment_zan_img"><img src="static/images/zan_lv.png"/></span><span>26</span></p>
+            </div>
         </div>
-    </div>
-    <div class="user_comment_all user_comment_all_5" data-user_id="5" data-xin_light="3">
-        <div class="user_img">
-            <div class="user_img_c"><img src="static/images/store_logo.png" alt="图像"/></div>
-        </div>
-        <div class="user_info">
-            <p class="user_name">蓝胖纸
+        <div class="user_comment_all user_comment_all_5" data-user_id="5" data-xin_light="3">
+            <div class="user_img">
+                <div class="user_img_c"><img src="static/images/store_logo.png" alt="图像"/></div>
+            </div>
+            <div class="user_info">
+                <p class="user_name">蓝胖纸
                     <span class="user_comment_xin">
                         <span><img class="user_comment_xin_img_1_5" src="static/images/star/xin_hui.png"/></span>
                         <span><img class="user_comment_xin_img_2_5" src="static/images/star/xin_hui.png"/></span>
@@ -118,74 +119,31 @@
                         <span><img class="user_comment_xin_img_4_5" src="static/images/star/xin_hui.png"/></span>
                         <span><img class="user_comment_xin_img_5_5" src="static/images/star/xin_hui.png"/></span>
                     </span>
-            </p>
-            <p class="user_comment_time">2018-07-27  17:05:00</p>
-            <p class="user_comment_content">这个课程很好，对我的帮助很大很喜欢，支持你们！</p>
-            <p class="user_comment_zan"><span class="user_comment_zan_img"><img src="static/images/zan_lv.png"/></span><span>26</span></p>
+                </p>
+                <p class="user_comment_time">2018-07-27  17:05:00</p>
+                <p class="user_comment_content">这个课程很好，对我的帮助很大很喜欢，支持你们！</p>
+                <p class="user_comment_zan"><span class="user_comment_zan_img"><img src="static/images/zan_lv.png"/></span><span>26</span></p>
+            </div>
         </div>
     </div>
+    <div class="user_comment_more">————加载更多————</div>
 </div>
 <!-- 底部固定-->
 <div class="bottom_fixed">
     <div class="bottom_fixed_shop">
-        <div class="bottom_fixed_shop_l"><img src="static/images/shop.png"/><span class="bottom_fixed_shop_l_shop">店铺</span></div>
-        <div class="bottom_fixed_shop_r"><img src="static/images/shoucang_hui.png"/><span class="bottom_fixed_shop_l_sc">未收藏</span></div>
+        <div class="bottom_fixed_shop_l">
+            <img src="static/images/shop.png"/>
+            <span class="bottom_fixed_shop_l_shop">店铺</span>
+        </div>
+        <div class="bottom_fixed_shop_r">
+            <img class="bottom_fixed_shop_l_sc_img" src="static/images/shoucang_hui.png"/>
+            <span class="bottom_fixed_shop_l_sc">未收藏</span>
+        </div>
     </div>
     <div class="bottom_fixed_buy">购买（￥2.00）</div>
 </div>
-<div class="bottom_fixed_bottom">
+<div class="bottom_fixed_bottom"></div>
 
-</div>
-<script>
-    function onload_in(user_id){
-        for (var i=0;i<user_id.length;i++){
-            user_xin(user_id[i]);
-        }
-    }
-    //用户评论点亮的红心
-    function user_xin(user_id){
-        var ss = '.user_comment_all_'+user_id;
-        var xin_num = $(ss).attr("data-xin_light");
-        for (var i= 0;i<=xin_num;i++){
-            var xin_light = '.user_comment_xin_img_'+i+'_'+user_id;
-            $(xin_light).attr("src","static/images/star/xin_red.png");
-        }
-    }
-</script>
-<script>
-    $(document).ready(function () {
-        var mySwiper = new Swiper ('.swiper-container', {
-            direction: 'horizontal',
-            loop: true,
-            delay:3000,
-            disableOnInteraction:true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable :true
-            },
-            centeredSlides : true,
-            slidesPerView :'auto',
-            centeredslides:true
-        });
-        var mySwiperTwo = new Swiper ('.swiper-container_you_like', {
-            direction: 'horizontal',
-            loop: false,
-            slidesPerView :'auto'
-        });
-    });
-</script>
-<script>
-    $('.goods_details_content_more_btn').click(function(){
-        var sas = $('.goods_details_content_more_btn').text();
-//            $('.class_details_content_more_btn').attr('style','border-color:#00e0a8');
-        if(sas == "查看更多") {
-            $('.goods_details_content').attr('style', 'max-height:600px;');
-            $('.goods_details_content_more_btn').text("收起更多");
-        }else{
-            $('.goods_details_content').attr('style', 'max-height:0.61rem;');
-            $('.goods_details_content_more_btn').text("查看更多");
-        }
-    });
-</script>
+<script src="static/js/GoodsDetail.js" charset="utf-8"></script>
 </body>
 </html>

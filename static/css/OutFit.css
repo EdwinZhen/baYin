@@ -68,11 +68,15 @@
 .offline_course {
     margin-bottom: 0.08rem;
 }
-.offline_course_all {
-    display: flex;
-    background: #ffffff;
-    padding: 0.06rem 0.15rem;
-}
+    .offline_course_list {
+        padding-bottom: 0.1rem;
+        background: #ffffff;
+    }
+    .offline_course_all {
+        display: flex;
+        background: #ffffff;
+        padding: 0.06rem 0.15rem;
+    }
     .offline_course_img {
         width: 50%;
         height: 0.85rem;
